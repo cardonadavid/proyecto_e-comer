@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e02909;
+
+
+}
+
+header .logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(14, 2, 2);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(14, 2, 2);
+    font-size: 19px;
+}
+
+.title-productos-destacados>h2 {
+    text-align: center;
+    background-color: #004085;
+    display: block;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.container {
+    gap: 30px;
+    padding: 2vh;
+    display: inline-flex;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.card:hover {
+    background-color: #5bf16d;
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 1vw;
+}
+
+.card .price {
+    color: #ff6347;
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    color: #333;
+}
+
+
+footer {
+    background-color: #6af76a;
+    color: rgb(14, 2, 2);
+    text-align: center;
+    padding: 20px;
+}
+
+footer .redes-sociales a {
+    color: rgb(14, 2, 2);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        display: none;
+    }
+
+}
