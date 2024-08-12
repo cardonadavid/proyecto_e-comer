@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,67 +9,57 @@
 </head>
 
 <body>
-
     <header>
-        <div class="logo">
-            <img src="assets/img/home.svg">
-        </div>
+        <div class="logo">Tienda de Aguacates</div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#carrito">Carrito de Compras</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Carrito de Compras</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de oferta -->
+    <section class="banner">
+        <img src="banner.jpg" alt="Promoción de Aguacates">
+        <div class="banner-text">
+            <h1>Los mejores aguacates directamente a tu mesa</h1>
+        </div>
+    </section>
 
-    <div class="jumbotron">
-        <span>
-            <h2>Oferta especial</h2>
-        </span>
+    <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="aguacate1.jpg" alt="Aguacate 1">
+                <h3>Aguacate Premium</h3>
+                <p>Delicioso y fresco</p>
+                <p class="precio">$3.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="aguacate2.jpg" alt="Aguacate 2">
+                <h3>Aguacate Orgánico</h3>
+                <p>100% natural</p>
+                <p class="precio">$4.00</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <!-- Más productos -->
+        </div>
+    </section>
 
-    </div>
-
-    <!-- Sección de Productos Destacados -->
-    <h2 style="text-align: center;">Productos destacados</h2>
-    <div class="container">
-        <div class="card">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h3>Producto 1</h3>
-            <p class="price">$20.00</p>
-            <p>Descripción breve del producto 1.</p>
-        </div>
-        <div class="card">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Producto 2</h3>
-            <p class="price">$30.00</p>
-            <p>Descripción breve del producto 2.</p>
-        </div>
-        <div class="card">
-            <img src="producto3.jpg" alt="Producto 3">
-            <h3>Producto 3</h3>
-            <p class="price">$40.00</p>
-            <p>Descripción breve del producto 3.</p>
-        </div>
-        <div class="card">
-            <img src="producto4.jpg" alt="Producto 4">
-            <h3>Producto 4</h3>
-            <p class="price">$50.00</p>
-            <p>Descripción breve del producto 4.</p>
-        </div>
-    </div>
-    <!-- Pie de Página -->
     <footer>
-        <p>Contacto: contacto@tienda.com</p>
+        <div class="contacto">
+            <p>Contacto: info@tiendadeaguacates.com</p>
+        </div>
         <div class="redes-sociales">
             <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
-        <p><a href="#">Políticas de Privacidad</a></p>
+        <div class="politicas">
+            <a href="#">Políticas de Privacidad</a>
+        </div>
     </footer>
 </body>
 

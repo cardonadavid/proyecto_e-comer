@@ -1,136 +1,151 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
+    background-color: #76c893;
+    color: white;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e02909;
-
-
 }
 
-header .logo img {
-    width: 50px;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+header nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    margin: 0 10px;
+header nav ul li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: rgb(14, 2, 2);
+header nav ul li a {
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: rgb(14, 2, 2);
-    font-size: 19px;
+header nav ul li a:hover {
+    background-color: #4a7856;
+    border-radius: 5px;
 }
 
-.title-productos-destacados>h2 {
+.banner {
+    position: relative;
     text-align: center;
-    background-color: #004085;
-    display: block;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0056b3;
-    border-color: #004085;
-}
-
-.container {
-    gap: 30px;
-    padding: 2vh;
-    display: inline-flex;
-}
-
-.card {
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    margin: auto;
-}
-
-.card:hover {
-    background-color: #5bf16d;
-    transform: translateY(-10px);
-}
-
-.card img {
+.banner img {
     width: 100%;
     height: auto;
 }
 
-.card h3 {
-    margin: 1vw;
+.banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.card .price {
-    color: #ff6347;
-    font-size: 1.2em;
-    text-decoration: underline;
-    margin: 10px 0;
-}
-
-.card p {
-    padding: 0 15px 15px;
-    color: #333;
-}
-
-
-footer {
-    background-color: #6af76a;
-    color: rgb(14, 2, 2);
-    text-align: center;
+.productos-destacados,
+.listado-productos,
+.productos-relacionados {
     padding: 20px;
 }
 
-footer .redes-sociales a {
-    color: rgb(14, 2, 2);
-    margin: 0 10px;
-    text-decoration: none;
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
+.producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-@media screen and (max-width: 600px) {
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+.producto h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.producto .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #76c893;
+}
+
+.producto button {
+    background-color: #76c893;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #4a7856;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    header {
-        display: none;
+    .banner .banner-text {
+        font-size: 18PX;
     }
-
 }
